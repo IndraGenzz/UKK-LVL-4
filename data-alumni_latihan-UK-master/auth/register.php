@@ -13,7 +13,7 @@ if (isset($_POST['registrasi'])) {
     if ($insert) {
         // jika insert berhasil , langsung set session
         $_SESSION['username'] = $username;
-        $_SESSION['role'] = "admin";
+        $_SESSION['role'] = "user";
 
         header('location: ../user.php');
         exit();
